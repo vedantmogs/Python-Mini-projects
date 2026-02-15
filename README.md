@@ -52,7 +52,7 @@ These projects were developed to strengthen core programming fundamentals includ
 
 Clone the repository:
 
-git clone https://github.com/yourusername/python-mini-projects.git
+git clone https://github.com/vedant/python-mini-projects.git
 
 Run any file:
 
