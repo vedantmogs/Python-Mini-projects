@@ -48,5 +48,16 @@ These projects were developed to strengthen core programming fundamentals includ
 
 ---
 
-📌 Developed as part of my foundational programming journey during First Year of Computer Engineering.
+## 🚀 How to Run
+
+Clone the repository:
+
+git clone https://github.com/yourusername/python-mini-projects.git
+
+Run any file:
+
+python filename.py
+
+
+📌 Developed as part of my foundational programming journey during First Year of BSC Computer Science
 
