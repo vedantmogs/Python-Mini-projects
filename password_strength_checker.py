@@ -1,10 +1,26 @@
-def check_password_strength(password):
-    if len(password) < 6:
-        return "Weak (Too short)"
-    elif password.isalpha() or password.isdigit():
-        return "Medium (Add numbers or symbols)"
+import string
+
+def check_password(password):
+    score = 0
+
+    if len(password) >= 8:
+        score += 1
+    if any(c.isupper() for c in password):
+        score += 1
+    if any(c.islower() for c in password):
+        score += 1
+    if any(c.isdigit() for c in password):
+        score += 1
+    if any(c in string.punctuation for c in password):
+        score += 1
+
+    if score <= 2:
+        return "Weak"
+    elif score == 3 or score == 4:
+        return "Medium"
     else:
         return "Strong"
 
-password = input("Enter a password: ")
-print("Password Strength:", check_password_strength(password))
+if __name__ == "__main__":
+    pwd = input("Enter password: ")
+    print("Password Strength:", check_password(pwd))
